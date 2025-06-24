@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monarch - Hair Transplant Clinic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-gray-100 py-2.5">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-end items-center space-x-6">
+                <!-- Social Media Icons -->
+                <a href="https://www.facebook.com/monarchhairtransplantclinic1" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon group" aria-label="Facebook">
+                    <i class="fab fa-facebook-f text-gray-500 group-hover:text-white group-hover:bg-blue-600"></i>
+                </a>
+                <a href="https://www.instagram.com/monarchhairtransplantclinic/" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon group" aria-label="Instagram">
+                    <i class="fab fa-instagram text-gray-500 group-hover:text-white group-hover:bg-gradient-to-r from-purple-600 to-pink-600"></i>
+                </a>
+                <a href="https://www.youtube.com/@MonarchHairTransplantClinic" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon group" aria-label="YouTube">
+                    <i class="fab fa-youtube text-gray-500 group-hover:text-white group-hover:bg-red-600"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/t2LDutgnWP1K9kFG7" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="Google Business Profile">
+                    <i class="fab fa-google text-gray-500 group-hover:text-white group-hover:bg-green-600"></i>
+                </a>
+                <!-- Email -->
+                <a href="mailto:info@monarchrestore.co.uk" 
+                   class="social-icon group" aria-label="Email">
+                    <i class="fas fa-envelope text-gray-500 group-hover:text-white group-hover:bg-blue-500"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <style>
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        .social-icon i {
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        .social-icon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+          .hide-mobile { display: none !important; }
+          
+          /* Mobile Banner Slider Adjustments */
+          .banner-slider {
+            min-height: 60vh !important;
+            padding: 20px 0 !important;
+          }
+          
+          .slide {
+            min-height: 60vh !important;
+            padding: 20px 0 !important;
+          }
+          
+          .slide-content h2 {
+            font-size: 1.8rem !important;
+            line-height: 1.3 !important;
+            margin-bottom: 15px !important;
+          }
+          
+          .slide-content p {
+            font-size: 1rem !important;
+            line-height: 1.5 !important;
+            margin-bottom: 20px !important;
+          }
+          
+          .slide-wrapper {
+            flex-direction: column !important;
+            gap: 20px !important;
+          }
+          
+          .slide-content {
+            text-align: center !important;
+            padding: 0 15px !important;
+          }
+          
+          .slide-features {
+            margin-top: 20px !important;
+          }
+          
+          .features-box {
+            padding: 20px 15px !important;
+          }
+          
+          .features-box h3 {
+            font-size: 1.4rem !important;
+            margin-bottom: 15px !important;
+          }
+          
+          .features-list li {
+            font-size: 0.9rem !important;
+            padding: 8px 0 !important;
+          }
+          
+          .cta-buttons {
+            flex-direction: column !important;
+            gap: 10px !important;
+          }
+          
+          .btn {
+            width: 100% !important;
+            max-width: 250px !important;
+            margin: 0 auto !important;
+          }
+        }
+    </style>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#treatments">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="FUE_Hair_Transplant.html">FUE Hair Transplant</a>
+                            <a href="#treatments">DHI Hair Transplant</a>
+                            <a href="#treatments">Beard/Mustache Transplant</a>
+                            <a href="#treatments">Afro Hair Transplant</a>
+                            <a href="#treatments">Eyebrow Transplant</a>
+                            <a href="#treatments">Female Hair Transplant</a>
+                        </div>
+                    </li>
+                    <li><a href="restore-plus.html">Restore+</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="book-consultation.html" class="book-btn">Book Consultation</a>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Slider Section -->
+    <section class="banner-slider">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                <div class="container">
+                    <div class="slide-wrapper">
+                        <div class="slide-content">
+                            <h2>Personalised Hair Loss Treatment<br><span class="highlight">Backed by Science<br><img src="images/restore.png" alt="Restore+" class="restore-logo"></span></h2>
+                            <p>Monarch Restore+ delivers bespoke compounded medications,<br>overseen by hair transplant surgeons with years of clinical experience.</p>
+                            <div class="cta-buttons">
+                                <a href="restore-plus.html" class="btn btn-outline">View More</a>
+                                <a href="book-consultation.html" class="btn btn-primary">Start Your Consultation</a>
+                            </div>
+                        </div>
+                        <div class="slide-features">
+                            <div class="features-box">
+                                <h3>Why Choose Monarch Restore+</h3>
+                                <ul class="features-list">
+                                    <li class="highlight-item">OUR FORMULAS</li>
+                                    <li class="highlight-item">FINASTERIDE</li>
+                                    <li class="highlight-item">MINOXIDIL</li>
+                                    <li class="highlight-item">CUSTOM BLENDS</li>
+                                    <li class="highlight-item">REAL RESULTS FROM REAL PATIENTS</li>
+                                    <li class="highlight-item">MEDICAL OVERSIGHT - ALWAYS</li>
+                                    <li class="highlight-item">SIMPLE PRICING & EASY DELIVERY</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                <div class="container">
+                    <div class="slide-wrapper">
+                        <div class="slide-content">
+                            <h2 class="animate__animated animate__fadeInUp" style="color: #1a365d;">Regain Your Confidence<br><span class="highlight">with Monarch</span></h2>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s">Experience world-class hair restoration with our advanced techniques,<br>delivering natural-looking results that last a lifetime.</p>
+                            <div class="cta-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                                <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                            </div>
+                        </div>
+                        <div class="slide-image hide-mobile">
+                            <img src="images/man.png" alt="Professional hair restoration results" class="animate__animated animate__fadeInRight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!-- Slider Dots -->
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+        </div>
+    </section>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Treatments -->
+    <section class="treatments-section" style="padding: 80px 0; background-color: #f9fafc;">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <h2 class="text-3xl md:text-4xl font-bold">Our Hair Restoration Treatments</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Comprehensive solutions for all types of hair loss, performed by our expert team using the latest techniques.</p>
+            </div>
+            <div class="treatments-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 20px;">
+                <div class="treatment-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <a href="FUE_Hair_Transplant.html" style="display:block;">
+                        <div class="treatment-img" style="height: 220px; background-size: cover; background-position: center; background-image: url('images/FUE_Hair_Transplant.jpg');"></div>
+                    </a>
+                    <div class="treatment-content" style="padding: 25px;">
+                        <h3 style="margin: 0 0 15px 0; font-size: 1.5rem; color: #1f2937;">FUE Hair Transplant</h3>
+                        <p style="color: #6b7280; margin-bottom: 20px; line-height: 1.6;">Minimally invasive procedure with natural-looking results and minimal downtime. Perfect for those seeking a permanent solution to hair loss.</p>
+                        <a href="FUE_Hair_Transplant.html" class="btn primary-btn" style="display: inline-block; padding: 10px 25px; background-color: #005f8c; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; transition: background-color 0.3s ease;">Learn More</a>
+                    </div>
+                </div>
+                <div class="treatment-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div class="treatment-img" style="height: 220px; background-size: cover; background-position: center; background-image: url('images/DHI_Hair_Transplant.png');"></div>
+                    <div class="treatment-content" style="padding: 25px;">
+                        <h3 style="margin: 0 0 15px 0; font-size: 1.5rem; color: #1f2937;">DHI Hair Transplant</h3>
+                        <p style="color: #6b7280; margin-bottom: 20px; line-height: 1.6;">Advanced technique for precise graft placement with maximum density. Our specialists ensure natural-looking hairlines with optimal results.</p>
+                        <a href="#treatments" class="btn primary-btn" style="display: inline-block; padding: 10px 25px; background-color: #005f8c; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; transition: background-color 0.3s ease;">Learn More</a>
+                    </div>
+                </div>
+                <div class="treatment-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div class="treatment-img" style="height: 220px; background-size: cover; background-position: center; background-image: url('images/prp.jpg');"></div>
+                    <div class="treatment-content" style="padding: 25px;">
+                        <h3 style="margin: 0 0 15px 0; font-size: 1.5rem; color: #1f2937;">PRP Therapy</h3>
+                        <p style="color: #6b7280; margin-bottom: 20px; line-height: 1.6;">Natural treatment using your body's own platelets to stimulate hair growth and improve hair thickness and quality.</p>
+                        <a href="#treatments" class="btn primary-btn" style="display: inline-block; padding: 10px 25px; background-color: #005f8c; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; transition: background-color 0.3s ease;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="#treatments" class="btn primary-btn" style="display: inline-block; padding: 12px 35px; background-color: #005f8c; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 1.1rem; transition: background-color 0.3s ease;">View All Treatments</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Gallery -->
+    <section class="results-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Real Patient Results</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/before1.jpg" alt="Before and after Hair transplant">
+                    <div class="gallery-overlay">
+                        <h4>Hair Transplant</h4>
+                       
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/before2.jpg" alt="Before and after Beard transplant">
+                    <div class="gallery-overlay">
+                        <h4>Beard Transplant</h4>
+                      
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/before3.jpg" alt="Before and after Eyebrow transplant">
+                    <div class="gallery-overlay">
+                        <h4>Eyebrow Transplant</h4>
+                    
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/before4.jpg" alt="Before and after Female Hair transplant">
+                    <div class="gallery-overlay">
+                        <h4>Female Hair Restoration</h4>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#gallery" class="btn primary-btn">View More Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study" style="background: #f4f8fb; padding: 60px 0;">
+      <div class="container" style="max-width: 900px; margin: 0 auto;">
+        <div class="section-header text-center" style="margin-bottom: 40px;">
+          <h2 style="font-size: 2.2rem; font-weight: 700; color: #1a365d; margin-bottom: 10px;">
+            <span style="font-size: 2rem; vertical-align: middle;"></span> Case Study: Crown Restoration & Natural Hairline Redesign After a Previous Transplant
+          </h2>
+          <div style="font-size: 1.1rem; color: #005f8c; font-weight: 500;">Patient: Gary<br>Clinic: Monarch Hair Transplant Clinic</div>
+        </div>
+        <div class="case-study-content" style="background: #fff; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 32px 28px;">
+          <div style="margin-bottom: 28px;">
+            <h3 style="font-size: 1.3rem; color: #1a365d; margin-bottom: 8px;">🔍 Background</h3>
+            <p style="color: #444; line-height: 1.7;">Gary approached Monarch Hair Transplant Clinic after being left disappointed by a previous hair transplant performed elsewhere. While his initial procedure focused solely on the frontal hairline, the results didn't align with his expectations — both in style and density. His crown remained untouched and continued to thin, and the existing hairline lacked the natural flow and shape he had hoped for.</p>
+          </div>
+          <div style="margin-bottom: 28px;">
+            <h3 style="font-size: 1.3rem; color: #1a365d; margin-bottom: 8px;">🧠 Key Concerns:</h3>
+            <ul style="color: #444; line-height: 1.7; padding-left: 20px;">
+              <li>Persistent diffuse thinning in the crown, an area known to be technically challenging</li>
+              <li>A flat, unnatural hairline that didn't complement his features</li>
+              <li>Low confidence following a previous underwhelming result</li>
+              <li>Desire for a refined, fuller look across both the crown and frontal zone</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 28px;">
+            <h3 style="font-size: 1.3rem; color: #1a365d; margin-bottom: 8px;">🛠 Our Approach</h3>
+            <ul style="color: #444; line-height: 1.7; padding-left: 20px;">
+              <li>Redesigned the hairline with a soft, broken, and natural pattern that better suited his face and age</li>
+              <li>Densified the crown, carefully following the native hair direction and whorl to restore natural texture and appearance</li>
+              <li>Blended all transplanted areas into existing hair to create a seamless, undetectable finish</li>
+            </ul>
+            <p style="color: #444; line-height: 1.7; margin-top: 10px;">This involved meticulous planning to maximize existing donor resources and correct previous aesthetic shortcomings, all while achieving a balanced, realistic result.</p>
+          </div>
+          <div>
+            <h3 style="font-size: 1.3rem; color: #1a365d; margin-bottom: 8px;">🌟 Outcome</h3>
+            <p style="color: #444; line-height: 1.7;">Gary's results speak for themselves. His crown now shows strong, even coverage — a significant transformation from the visible thinning he previously lived with. The new hairline not only looks natural but is stylistically on point, offering him flexibility and confidence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide-2">
+        <div class="container">
+            <!-- Content will be added here -->
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">10+</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">1500+</h3>
+                        <p class="stat-label">Procedures</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">98%</h3>
+                        <p class="stat-label">Success Rate</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">100%</h3>
+                        <p class="stat-label">Patient Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top" style="background:#002244;">
+            <div class="container">
+                <div class="footer-grid" style="display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between;">
+                    <div class="footer-about" style="flex:1 1 220px; min-width:220px; color:#fff;">
+                        <h2 class="footer-logo">Monarch</h3>
+                        <p>Your trusted partner in hair restoration with over 10 years of experience and thousands of successful procedures.</p>
+                        <div class="social-links flex space-x-5">
+                            <a href="https://www.facebook.com/monarchhairtransplantclinic1" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="Facebook">
+                                <i class="fab fa-facebook-f text-gray-500 group-hover:text-white group-hover:bg-blue-600"></i>
+                            </a>
+                            <a href="https://www.instagram.com/monarchhairtransplantclinic/" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="Instagram">
+                                <i class="fab fa-instagram text-gray-500 group-hover:text-white group-hover:bg-gradient-to-r from-purple-600 to-pink-600"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@MonarchHairTransplantClinic" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="YouTube">
+                                <i class="fab fa-youtube text-gray-500 group-hover:text-white group-hover:bg-red-600"></i>
+                            </a>
+                            <a href="https://maps.app.goo.gl/t2LDutgnWP1K9kFG7" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="Google Business Profile">
+                                <i class="fab fa-google text-gray-500 group-hover:text-white group-hover:bg-green-600"></i>
+                            </a>
+                            <a href="mailto:info@monarchrestore.co.uk" class="social-icon group" aria-label="Email">
+                                <i class="fas fa-envelope text-gray-500 group-hover:text-white group-hover:bg-blue-500"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links" style="flex:1 1 160px; min-width:160px; color:#fff;">
+                        <h3>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Home</a></li>
+                            <li><a href="about.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> About Us</a></li>
+                            <li><a href="restore-plus.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Monarch Restore+</a></li>
+                            <li><a href="#gallery" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Gallery</a></li>
+                            <li><a href="pricing.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Pricing</a></li>
+                            <li><a href="faqs.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links" style="flex:1 1 160px; min-width:160px; color:#fff;">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> FUE Hair Transplant</a></li>
+                            <li><a href="#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> DHI Hair Transplant</a></li>
+                            <li><a href="#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Beard Transplant</a></li>
+                            <li><a href="#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Eyebrow Transplant</a></li>
+                            <li><a href="#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> PRP Therapy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact" style="flex:1 1 220px; min-width:220px; color:#fff;">
+                        <h3>Contact Us</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start group">
+                                <div class="bg-gray-101 group-hover:bg-red-100 rounded-full w-10 h-10 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-red-601 group-hover:text-white text-lg"></i>
+                                </div>
+                                <span class="text-gray-701 group-hover:text-red-600">10 City Road,<br>Chester, CH1 3AE</span>
+                            </div>
+                            <div class="flex items-start group">
+                                <div class="bg-gray-101 group-hover:bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <i class="fas fa-phone-alt text-blue-601 group-hover:text-white text-lg"></i>
+                                </div>
+                                <span class="text-gray-701 group-hover:text-blue-600">01244 342 768</span>
+                            </div>
+                            <div class="flex items-start group">
+                                <div class="bg-gray-101 group-hover:bg-green-100 rounded-full w-10 h-10 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <i class="fas fa-mobile-alt text-green-601 group-hover:text-white text-lg"></i>
+                                </div>
+                                <span class="text-gray-701 group-hover:text-green-600">07776 576 524</span>
+                            </div>
+                            <div class="flex items-start group">
+                                <div class="bg-gray-101 group-hover:bg-yellow-100 rounded-full w-10 h-10 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <i class="fas fa-envelope text-yellow-601 group-hover:text-white text-lg"></i>
+                                </div>
+                                <span class="text-gray-701 group-hover:text-yellow-600">info@monarchrestore.co.uk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" style="background:#001122; text-align:center; padding:12px 0; color:#fff;">
+            <div class="container">
+                <p>&copy; <span id="current-year">2024</span> Monarch Hair Transplant Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        // Initialize Slick Carousel for Testimonials
+        $(document).ready(function(){
+            $('.testimonials-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 5000, // 5 seconds
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            dots: true
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.hero-carousel').slick({
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 800,
+                fade: true,
+                cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+                autoplay: true,
+                autoplaySpeed: 15000, // 15 seconds for first slide
+                pauseOnHover: false,
+                onAfterChange: function(slick, currentSlide) {
+                    // Change speed based on current slide
+                    if (currentSlide === 0) {
+                        $('.hero-carousel').slick('slickSetOption', 'autoplaySpeed', 15000, true);
+                    } else {
+                        $('.hero-carousel').slick('slickSetOption', 'autoplaySpeed', 10000, true);
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="js/slider.js"></script>
+    <style>
+    @media (max-width: 900px) {
+      .footer-grid { flex-direction: column !important; gap: 24px !important; }
+      .footer-about, .footer-links, .footer-contact { min-width: 0 !important; }
+    }
+    </style>
+</body>
+</html>

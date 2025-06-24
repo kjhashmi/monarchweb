@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Monarch Hair Transplant Clinic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        /* Pricing Section Styles */
+        .pricing-section {
+            padding: 80px 0;
+            background: #f9fafc;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card.featured::before {
+            content: "Most Popular";
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: #005f8c;
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .pricing-type {
+            font-size: 1.5rem;
+            color: #1a365d;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .pricing-price {
+            font-size: 2.5rem;
+            color: #005f8c;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        
+        .pricing-price span {
+            font-size: 1rem;
+            color: #6b7280;
+            font-weight: normal;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            color: #4b5563;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-features i {
+            color: #005f8c;
+            margin-right: 8px;
+        }
+        
+        .pricing-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #005f8c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .pricing-btn:hover {
+            background: #004d73;
+        }
+        
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        .social-icon i {
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        .social-icon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-gray-100 py-2.5">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-end items-center space-x-6">
+                <!-- Social Media Icons -->
+                <a href="https://www.facebook.com/monarchhairtransplantclinic1" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon group" aria-label="Facebook">
+                    <i class="fab fa-facebook-f text-gray-500 group-hover:text-white group-hover:bg-blue-600"></i>
+                </a>
+                <a href="https://www.instagram.com/monarchhairtransplantclinic/" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon group" aria-label="Instagram">
+                    <i class="fab fa-instagram text-gray-500 group-hover:text-white group-hover:bg-gradient-to-r from-purple-600 to-pink-600"></i>
+                </a>
+                <a href="https://www.youtube.com/@MonarchHairTransplantClinic" target="_blank" rel="noopener noreferrer" 
+                   class="social-icon group" aria-label="YouTube">
+                    <i class="fab fa-youtube text-gray-500 group-hover:text-white group-hover:bg-red-600"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/t2LDutgnWP1K9kFG7" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="Google Business Profile">
+                    <i class="fab fa-google text-gray-500 group-hover:text-white group-hover:bg-green-600"></i>
+                </a>
+                <!-- Email -->
+                <a href="mailto:info@monarchrestore.co.uk" 
+                   class="social-icon group" aria-label="Email">
+                    <i class="fas fa-envelope text-gray-500 group-hover:text-white group-hover:bg-blue-500"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="FUE_Hair_Transplant.html">FUE Hair Transplant</a>
+                            <a href="index.html#treatments">DHI Hair Transplant</a>
+                            <a href="index.html#treatments">Beard/Mustache Transplant</a>
+                            <a href="index.html#treatments">Afro Hair Transplant</a>
+                            <a href="index.html#treatments">Eyebrow Transplant</a>
+                            <a href="index.html#treatments">Female Hair Transplant</a>
+                        </div>
+                    </li>
+                    <li><a href="restore-plus.html">Restore+</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="book-consultation.html" class="book-btn">Book Consultation</a>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <h2 class="text-3xl md:text-4xl font-bold" style="color: #1a365d;">Our Transparent Pricing</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Choose the package that best suits your needs. All our treatments include comprehensive care and follow-up support.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Silver Package -->
+                <div class="pricing-card">
+                    <h3 class="pricing-type">💼 Silver Package</h3>
+                    <div class="pricing-price">from £2,000</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Up to 1,500 grafts</li>
+                        <li><i class="fas fa-check"></i>One-day procedure</li>
+                        <li><i class="fas fa-check"></i>Ideal for minor restoration in areas like temples or hairline.</li>
+                    </ul>
+                    <a href="index.html#contact" class="pricing-btn">Book Consultation</a>
+                </div>
+
+                <!-- Gold Package -->
+                <div class="pricing-card featured">
+                    <h3 class="pricing-type">💎 Gold Package</h3>
+                    <div class="pricing-price">from £2,500</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Up to 2,500 grafts</li>
+                        <li><i class="fas fa-check"></i>One-day procedure</li>
+                        <li><i class="fas fa-check"></i>Suited for frontal and crown restoration in moderate cases.</li>
+                    </ul>
+                    <a href="index.html#contact" class="pricing-btn">Book Consultation</a>
+                </div>
+
+                <!-- Platinum Package -->
+                <div class="pricing-card">
+                    <h3 class="pricing-type">👑 Platinum Package</h3>
+                    <div class="pricing-price">from £3,000</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Up to 3,500 grafts</li>
+                        <li><i class="fas fa-check"></i>One-day procedure</li>
+                        <li><i class="fas fa-check"></i>Best for patients looking for dense coverage across front and mid-scalp.</li>
+                    </ul>
+                    <a href="index.html#contact" class="pricing-btn">Book Consultation</a>
+                </div>
+
+                <!-- Diamond Package -->
+                <div class="pricing-card">
+                    <h3 class="pricing-type">🏆 Diamond Package</h3>
+                    <div class="pricing-price">from £5,000</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>5,000+ grafts</li>
+                        <li><i class="fas fa-check"></i>Two-day procedure</li>
+                        <li><i class="fas fa-check"></i>For advanced hair loss (Norwood Grade 6–7).</li>
+                        <li><i class="fas fa-check"></i>Includes up to 3 nights' hotel stay, based on surgical plan.</li>
+                    </ul>
+                    <a href="index.html#contact" class="pricing-btn">Book Consultation</a>
+                </div>
+            </div>
+
+            <!-- Add-ons section -->
+            <div class="addons-section" style="margin-top: 60px;">
+                <div class="section-header text-center" style="margin-bottom: 40px;">
+                    <h2 class="text-2xl md:text-3xl font-bold" style="color: #1a365d;">Customize Your Experience</h2>
+                </div>
+
+                <div class="pricing-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; gap: 20px;">
+                    <!-- DHI Method -->
+                    <div class="pricing-card" style="text-align: left; padding: 30px;">
+                        <h3 class="pricing-type" style="font-size: 1.3rem;">⚙️ Add-On Option: DHI Method – <span style="color: #005f8c;">Additional £500</span></h3>
+                        <p style="color: #4b5563; margin-top: 10px;">If you choose the Direct Hair Implantation (DHI) technique — using a Choi Implanter Pen for precise placement — a surcharge of £500 applies. Recommended for high-density frontal hairline work or minimal graft trauma.</p>
+                    </div>
+                </div>
+
+                <div class="section-header text-center" style="margin-top: 50px; margin-bottom: 40px;">
+                    <h2 class="text-2xl md:text-3xl font-bold" style="color: #1a365d;">Optional Upgrade Packages (Add to any tier)</h2>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Recovery Boost -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-type">➕ Recovery Boost</h3>
+                        <div class="pricing-price">£200</div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i>3 PRP (Platelet-Rich Plasma) sessions for healing & graft survival</li>
+                        </ul>
+                    </div>
+                    <!-- Long-Term Care -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-type">➕ Long-Term Care</h3>
+                        <div class="pricing-price">£400</div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i>Includes Recovery Boost, plus:</li>
+                            <li><i class="fas fa-check"></i>12-month prescription of compounded Finasteride & Minoxidil</li>
+                            <li><i class="fas fa-check"></i>Full doctor-led monitoring and adjustments</li>
+                        </ul>
+                    </div>
+                    <!-- Comfort Travel Package -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-type">➕ Comfort Travel Package</h3>
+                        <div class="pricing-price">£600</div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i>Includes everything in Recovery Boost & Long-Term Care, plus:</li>
+                            <li><i class="fas fa-check"></i>Hotel stay for up to 3 nights with breakfast</li>
+                            <li><i class="fas fa-check"></i>Lunch on all surgery days</li>
+                            <li><i class="fas fa-check"></i>Private airport transfer to/from the clinic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">Not sure which package is right for you?</p>
+                <a href="index.html#contact" class="btn primary-btn" style="display: inline-block; padding: 12px 35px; background-color: #005f8c; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">Get a Personalized Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top" style="background:#002244;">
+            <div class="container">
+                <div class="footer-grid" style="display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between;">
+                    <div class="footer-about" style="flex:1 1 220px; min-width:220px; color:#fff;">
+                        <h2 class="footer-logo">Monarch</h3>
+                        <p>Your trusted partner in hair restoration with over 10 years of experience and thousands of successful procedures.</p>
+                        <div class="social-links flex space-x-5">
+                            <a href="https://www.facebook.com/monarchhairtransplantclinic1" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="Facebook">
+                                <i class="fab fa-facebook-f text-gray-500 group-hover:text-white group-hover:bg-blue-600"></i>
+                            </a>
+                            <a href="https://www.instagram.com/monarchhairtransplantclinic/" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="Instagram">
+                                <i class="fab fa-instagram text-gray-500 group-hover:text-white group-hover:bg-gradient-to-r from-purple-600 to-pink-600"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@MonarchHairTransplantClinic" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="YouTube">
+                                <i class="fab fa-youtube text-gray-500 group-hover:text-white group-hover:bg-red-600"></i>
+                            </a>
+                            <a href="https://maps.app.goo.gl/t2LDutgnWP1K9kFG7" target="_blank" rel="noopener noreferrer" class="social-icon group" aria-label="Google Business Profile">
+                                <i class="fab fa-google text-gray-500 group-hover:text-white group-hover:bg-green-600"></i>
+                            </a>
+                            <a href="mailto:info@monarchrestore.co.uk" class="social-icon group" aria-label="Email">
+                                <i class="fas fa-envelope text-gray-500 group-hover:text-white group-hover:bg-blue-500"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links" style="flex:1 1 160px; min-width:160px; color:#fff;">
+                        <h3>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Home</a></li>
+                            <li><a href="about.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> About Us</a></li>
+                            <li><a href="restore-plus.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Monarch Restore+</a></li>
+                            <li><a href="index.html#gallery" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Gallery</a></li>
+                            <li><a href="pricing.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Pricing</a></li>
+                            <li><a href="faqs.html" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links" style="flex:1 1 160px; min-width:160px; color:#fff;">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="index.html#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> FUE Hair Transplant</a></li>
+                            <li><a href="index.html#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> DHI Hair Transplant</a></li>
+                            <li><a href="index.html#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Beard Transplant</a></li>
+                            <li><a href="index.html#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> Eyebrow Transplant</a></li>
+                            <li><a href="index.html#treatments" class="hover:text-blue-601"><i class="fas fa-chevron-right text-xs mr-2"></i> PRP Therapy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact" style="flex:1 1 220px; min-width:220px; color:#fff;">
+                        <h3>Contact Us</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start group">
+                                <div class="bg-gray-101 group-hover:bg-red-100 rounded-full w-10 h-10 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-red-601 group-hover:text-white text-lg"></i>
+                                </div>
+                                <span class="text-gray-701 group-hover:text-red-600">10 City Road,<br>Chester, CH1 3AE</span>
+                            </div>
+                            <div class="flex items-start group">
+                                <div class="bg-gray-101 group-hover:bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <i class="fas fa-phone-alt text-blue-601 group-hover:text-white text-lg"></i>
+                                </div>
+                                <span class="text-gray-701 group-hover:text-blue-600">01244 342 768</span>
+                            </div>
+                            <div class="flex items-start group">
+                                <div class="bg-gray-101 group-hover:bg-green-100 rounded-full w-10 h-10 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <i class="fas fa-mobile-alt text-green-601 group-hover:text-white text-lg"></i>
+                                </div>
+                                <span class="text-gray-701 group-hover:text-green-600">07776 576 524</span>
+                            </div>
+                            <div class="flex items-start group">
+                                <div class="bg-gray-101 group-hover:bg-yellow-100 rounded-full w-10 h-10 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <i class="fas fa-envelope text-yellow-601 group-hover:text-white text-lg"></i>
+                                </div>
+                                <span class="text-gray-701 group-hover:text-yellow-600">info@monarchrestore.co.uk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" style="background:#001122; text-align:center; padding:12px 0; color:#fff;">
+            <div class="container">
+                <p>&copy; <span id="current-year">2024</span> Monarch Hair Transplant Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
